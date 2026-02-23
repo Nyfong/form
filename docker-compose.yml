@@ -1,0 +1,9 @@
+services:
+  clone-site:
+    image: nginx:alpine
+    container_name: clone-site
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/usr/share/nginx/html:ro
+    restart: unless-stopped
