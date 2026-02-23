@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>គាំពារសង្គម - Social Protection Digital Platform</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @font-face {
+      font-family: 'Battambang';
+      src: url('font/Battambang-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+    .font-battambang, .khmer {
+      font-family: 'Battambang', sans-serif;
+    }
+    /* Right panel: use provided background.svg */
+    .panel-bg {
+      background: url('background.svg') center center / cover no-repeat;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex antialiased font-battambang">
+  <!-- Left pane: Login form (~60%) -->
+  <main class="flex-1 flex flex-col justify-center pl-32 pr-12 py-5 bg-white" style="flex: 0 0 60%; max-width: 60%;">
+    <header class="flex items-start justify-between gap-6 mb-10 pl-24">
+      <img src="logo.png" alt="គាំពារសង្គម - Social Protection Digital Platform" class="w-[414px] h-[220px] object-contain object-left" />
+    </header>
+
+    <form class="w-[80%] ml-1">
+      <div class="mb-5">
+        <label for="username" class="block text-sm font-medium text-gray-700 mb-2">ឈ្មោះគណនី</label>
+        <input type="text" id="username" placeholder="ឈ្មោះគណនី"
+          class="w-full px-4 py-3 rounded-lg border border-gray-300 bg-white text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent font-battambang">
+      </div>
+      <div class="mb-5">
+        <label for="password" class="block text-sm font-medium text-gray-700 mb-2">ពាក្យសម្ងាត់</label>
+        <div class="relative">
+          <input type="password" id="password" placeholder="ពាក្យសម្ងាត់"
+            class="w-full px-4 py-3 rounded-lg border border-gray-300 bg-white text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent font-battambang">
+          <a href="#" class="absolute right-3 top-1/2 -translate-y-1/2 text-sm text-gray-500 hover:text-emerald-600 font-battambang">បង្ហាញពាក្យសម្ងាត់</a>
+        </div>
+      </div>
+      <button type="submit" class="w-full py-3.5 rounded-lg font-medium transition-colors font-battambang text-white bg-[#5cb85c] hover:bg-[#4c9a4c]">
+        ចូលប្រើប្រាស់
+      </button>
+    </form>
+
+    <p class="mt-6 text-sm text-gray-600 max-w-md font-battambang">
+      ដោយចុចចូលប្រើប្រាស់ អ្នកយល់ព្រមនឹង <a href="#" class="text-emerald-600 hover:underline font-medium">លក្ខខណ្ឌប្រើប្រាស់</a>
+    </p>
+    <a href="#" class="inline-flex items-center gap-2 mt-4 text-sm text-emerald-600 hover:text-emerald-700 font-medium font-battambang">
+      <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+      <span>ទាញយក Driver ឧបករណ៍ស្កេនខ្មៅដៃ</span>
+    </a>
+  </main>
+
+  <!-- Right pane: Branding (~40%) - your background.svg + nspc logo -->
+  <aside class="relative flex flex-col items-center justify-center px-8 py-12 overflow-hidden panel-bg" style="flex: 0 0 40%; max-width: 40%; min-height: 100vh;">
+    <div class="relative z-10 w-full max-w-sm flex justify-center">
+      <img src="nspc-logo-login-CaZZymGX.svg" alt="គាំពារ សង្គម កម្ពុជា - Social Protection in Cambodia" class="w-full h-auto max-h-[280px] object-contain" />
+    </div>
+
+    <a href="#" class="relative z-10 mt-12 text-center text-sm text-white font-battambang hover:underline underline-offset-2 max-w-xs">
+      សូមចុចទីនេះដើម្បីភ្ជាប់ឧបករណ៍ឌីជីថលសម្រាប់ ចុះបញ្ជីតាមថ្នាលគាំពារសង្គមឌីជីថល
+    </a>
+  </aside>
+</body>
+</html>
